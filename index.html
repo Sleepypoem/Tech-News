@@ -16,46 +16,47 @@
     </head>
 
     <body>
+
+
         <!-- Navbar -->
-        <div class="container">
-            <nav class="nav-main">
-                <i class="fa-solid fa-laptop-code fa-2x icon white-icon-color">TechNews</i>
-                <ul class="nav-list">
-                    <li class="nav-list-element">
-                        <a class="nav-link" href="index.html">
+        <nav class="nav-main">
+            <i class="fa-solid fa-laptop-code fa-2x brand white-icon-color">TechNews</i>
+            <ul id="nav-list" class="nav-list ">
+                <li class="nav-list-element">
+                    <a class="nav-link" href="index.html">
                             Inicio
                         </a>
-                    </li>
-                    <li class="nav-list-element">
-                        <a class="nav-link" href="">
+                </li>
+                <li class="nav-list-element">
+                    <a class="nav-link" href="">
                             Inteligencia Artificial
                         </a>
-                    </li>
-                    <li class="nav-list-element">
-                        <a class="nav-link" href="">
+                </li>
+                <li class="nav-list-element">
+                    <a class="nav-link" href="">
                             Criptomonedas
                         </a>
-                    </li>
-                    <li class="nav-list-element">
-                        <a class="nav-link" href="">
+                </li>
+                <li class="nav-list-element">
+                    <a class="nav-link" href="">
                             Machine Learning
                         </a>
-                    </li>
-                    <li class="nav-list-element">
-                        <a class="nav-link" href="">
+                </li>
+                <li class="nav-list-element">
+                    <a class="nav-link" href="">
                             Ciencia de datos
                         </a>
-                    </li>
-                </ul>
-                <i class="fa-solid fa-magnifying-glass fa-2x icon white-icon-color"></i>
-            </nav>
-        </div>
+                </li>
+            </ul>
+            <i id="button" class="fa-solid fa-bars hidden fa-2x icon white-icon-color"></i>
+            <i class="fa-solid fa-magnifying-glass fa-2x icon white-icon-color"></i>
+        </nav>
         <section>
             <div class="banner">
                 <h1>Las noticias mas interesantes.</h1>
                 <p class="banner-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Consectetur, unde.</p>
-                <a class="button sign-button" href="#">Saber mas <i
+                <a class="button" href="#">Saber mas <i
                         class="fa-solid fa-angles-right"></i></a>
             </div>
         </section>
@@ -68,8 +69,11 @@
                     <h2 class="card-title">Lorem, ipsum dolor.</h2>
                     <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                         Explicabo, aliquam!</p>
-                    <a href="#" class="button card-button">Saber mas <i
+                    <div class="button-container">
+                        <a href="#" class="button">Saber mas <i
                             class="fa-solid fa-angles-right"></i></a>
+                    </div>
+
                 </div>
                 <div class="card">
                     <img class="card-img" src="assets/img/news2.jpg" alt="">
@@ -77,8 +81,11 @@
                     <h2 class="card-title">Lorem, ipsum dolor.</h2>
                     <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                         Explicabo, aliquam!</p>
-                    <a href="#" class="button card-button">Saber mas <i
+                    <div class="button-container">
+                        <a href="#" class="button">Saber mas <i
                             class="fa-solid fa-angles-right"></i></a>
+                    </div>
+
                 </div>
                 <div class="card">
                     <img class="card-img" src="assets/img/news3.jpg" alt="">
@@ -86,8 +93,11 @@
                     <h2 class="card-title">Lorem, ipsum dolor.</h2>
                     <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                         Explicabo, aliquam!</p>
-                    <a href="#" class="button card-button">Saber mas <i
+                    <div class="button-container">
+                        <a href="#" class="button">Saber mas <i
                             class="fa-solid fa-angles-right"></i></a>
+                    </div>
+
                 </div>
                 <div class="card">
                     <img class="card-img" src="assets/img/news4.jpg" alt="">
@@ -95,21 +105,89 @@
                     <h2 class="card-title"> Lorem, ipsum dolor.</h2>
                     <p class="card-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Ducimus, ullam?</p>
-                    <a href="#" class="button card-button">Saber mas <i
+                    <div class="button-container">
+                        <a href="#" class="button">Saber mas <i
                             class="fa-solid fa-angles-right"></i></a>
+                    </div>
+
                 </div>
             </div>
         </section>
 
         <section>
             <div class="news-banner">
+                <div class="news-banner-text">
+                    <h2 class="news-banner-title">Lorem ipsum dolor sit amet.</h2>
+                    <p class="news-banner-info">Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Id explicabo fugit amet quisquam perspiciatis
+                        ipsum veritatis aut perferendis. Temporibus, nulla.</p>
+                    <div class="button-container">
+                        <a href="#" class="button "> Saber mas<i
+                            class="fa-solid fa-angles-right"></i></a>
+                    </div>
+
+                </div>
                 <img class="news-banner-img" src="assets/img/news-banner1.jpg"
                     alt="Computer science">
+
             </div>
         </section>
+
+        <section>
+            <div class="social-networks">
+                <h2>Siguenos</h2>
+                <div class="social-links">
+                    <a
+                        href="#"><i class="fa-brands fa-facebook fa-4x icon white-icon-color"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter fa-4x icon white-icon-color"></i></a>
+                    <a
+                        href="#"><i class="fa-brands fa-instagram fa-4x icon white-icon-color"></i></a>
+                </div>
+
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-container">
+                <ul>
+                    <h3>Bloque de footer</h3>
+                    <li><a class="footer-links" href="#">Inicio</a></li>
+                    <li><a class="footer-links" href="#">Criptomonedas</a></li>
+                    <li><a class="footer-links" href="#">Blockchain</a></li>
+                    <li><a class="footer-links" href="#">Inteligencia artificial</a></li>
+                </ul>
+            </div>
+            <div class="footer-container">
+                <ul>
+                    <h3>Bloque de footer</h3>
+                    <li><a class="footer-links" href="#">Sobre el sitio</a></li>
+                    <li><a class="footer-links" href="#">Lorem, ipsum dolor.</a></li>
+                    <li><a class="footer-links" href="#">Lorem, ipsum dolor.</a></li>
+                    <li><a class="footer-links" href="#">Lorem, ipsum dolor.</a></li>
+                </ul>
+            </div>
+            <div class="footer-container">
+                <ul>
+                    <h3>Bloque de footer</h3>
+                    <li><a class="footer-links" href="#">Lorem, ipsum dolor.</a></li>
+                    <li><a class="footer-links" href="#">Lorem, ipsum dolor.</a></li>
+                    <li><a class="footer-links" href="#">Lorem, ipsum dolor.</a></li>
+                    <li><a class="footer-links" href="#">Lorem, ipsum dolor.</a></li>
+                </ul>
+            </div>
+            <div class="footer-container">
+                <ul>
+                    <h3>Bloque de footer</h3>
+                    <li><a class="footer-links" href="#">Lorem, ipsum dolor.</a></li>
+                    <li><a class="footer-links" href="#">Lorem, ipsum dolor.</a></li>
+                    <li><a class="footer-links" href="#">Lorem, ipsum dolor.</a></li>
+                    <li><a class="footer-links" href="#">Lorem, ipsum dolor.</a></li>
+                </ul>
+            </div>
+        </footer>
     </body>
 
-    <script src="clase.js">
+    <script src="assets/js/script.js">
 
     </script>
 
